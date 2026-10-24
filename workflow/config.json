@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "project_root": "<project-root>",
+  "execution_mode": "design_only",
+  "production_enabled": false,
+  "publishing_enabled": false,
+  "own_accounts": {
+    "instagram": "dupy.app",
+    "threads": "dupy.app",
+    "source": "authenticated_in_app_browser"
+  },
+  "reference_channels": [
+    {
+      "platform": "instagram",
+      "handle": "<set in config.local.json>",
+      "url": "<set in config.local.json>",
+      "status": "user_confirmed"
+    },
+    {
+      "platform": "threads",
+      "handle": "<set in config.local.json>",
+      "url": "<set in config.local.json>",
+      "status": "service_link_verified"
+    }
+  ],
+  "collection": {
+    "provider": "tikhub_cli",
+    "cache_hours": 48,
+    "metrics_windows_hours": [
+      24,
+      72,
+      168
+    ],
+    "timezone": "Asia/Seoul"
+  },
+  "production": {
+    "video_provider": "higgsfield_api",
+    "model": "video-reference-model",
+    "voice_provider": "openrouter",
+    "influencer_images": [],
+    "background_images": [],
+    "budget_usd_per_run": null,
+    "voice_model": "tts-reference-clone-model",
+    "voice_label": "레퍼런스 클론 · denoise 참고 음성 · 비교 2번",
+    "voice_profile": "assets/voices/dupy-female-v1/profile.json",
+    "voice_mode": "stateless_reference_clone"
+  },
+  "loop": {
+    "candidate_count": 3,
+    "winner_count": 1,
+    "max_plan_revisions": 2,
+    "max_content_revisions": 2,
+    "max_api_submit_retries_on_unknown": 0,
+    "schedule": null
+  },
+  "policy": {
+    "reference_led": true,
+    "require_current_run_activation": true,
+    "publish_after_review_pass_when_run_authorized": true,
+    "auto_add_reference_channels": false,
+    "unattended_browser_access_verified": false
+  },
+  "mode_semantics": "Defaults for new runs; explicit per-run activation overrides defaults; current user stop overrides all.",
+  "run_records": {
+    "root": "runs",
+    "timezone": "Asia/Seoul",
+    "id_format": "YYYYMMDDTHHMMSSffffff+0900-random8",
+    "selected_stages": "from_user_request",
+    "partial_execution": true,
+    "stage_contract": "workflow/run-records.md",
+    "recorder": "scripts/run_artifacts.py",
+    "decision_logging": "evidence_based_summary",
+    "overwrite_previous_attempts": false
+  },
+  "asset_library": {
+    "source_videos": "assets/source-videos",
+    "catalog": "assets/source-videos/catalog.json",
+    "preserve_originals": true,
+    "derived_outputs": "runs/<run_id>/artifacts",
+    "automatic_ingest": false,
+    "exclude_directories": [
+      "_alternates"
+    ]
+  },
+  "reference_editing": {
+    "contract": "workflow/reference-editing.md",
+    "required_analysis": [
+      "composition_and_order",
+      "cuts_and_timing",
+      "subtitle_position_size_timing",
+      "content",
+      "hook_and_cta"
+    ],
+    "mute_all_source_audio": true,
+    "fit_shots_to_reference_duration": true
+  }
+}

@@ -1,0 +1,64 @@
+# Credentials and local machine state
+.env
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+
+# Generated / collected media (keep local)
+*.mp4
+*.mov
+*.webm
+*.mkv
+*.avi
+*.m4v
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.opus
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.avif
+*.heic
+
+# Exported review artifacts and runtime evidence
+outputs/
+*.zip
+*.xlsx
+*.pdf
+research/*/raw/
+research/*/watch/
+research/*/manifest.json
+research/*/index.html
+creative/*/qa-assets/
+creative/**/*-status.json
+creative/**/*-submission.json
+creative/**/*-attempt.json
+runs/
+experiments/
+# Aggregated raw provider payloads may contain expiring signed media URLs
+research/*/*_all.json
+node_modules
+creative/**/status.json
+creative/**/submission.json
+creative/**/attempt.json
+research/*/call_log_excerpt.json
+
+# Private user assets, media workspaces and execution artifacts
+/assets/
+/creative/
+/outputs/
+/runs/
+
+# Reference-channel raw data and local overrides (private)
+research/_ref-private/
+workflow/config.local.json

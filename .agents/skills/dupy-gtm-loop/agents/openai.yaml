@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dupy GTM Loop"
+  short_description: "레퍼런스 변주부터 성과 회수까지 Dupy의 7단계 콘텐츠 운영"
+  default_prompt: "$dupy-gtm-loop로 현재 설정과 회차 상태를 확인하고 허용된 단계부터 이어가세요."

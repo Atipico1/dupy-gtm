@@ -1,7 +1,8 @@
 # Dupy GTM
 
 - 먼저 `README.md`, `workflow/config.json`, `workflow/dupy-gtm-loop.md`를 읽는다. 제품 주장은 `research/dupy-product-sot.md`와 실제 근거를 대조한다.
-- 운영 진입점은 `.agents/skills/dupy-gtm-loop/SKILL.md`다. 지정 레퍼런스의 훅·사용 장면·CTA를 변주하고 원본 URL과 근거를 남긴다.
+- 운영 진입점은 `.agents/skills/dupy-gtm-loop/SKILL.md`다. 사용자 지정 레퍼런스의 훅 문구·첫 화면·행동·자막·박자를 그대로 유지하고 원본 URL과 근거를 남긴다.
+- 제품명·쇼핑쇼츠·차별점은 훅 다음 설명/데모에서 보여준다. 훅이 제품과 직접 관련 없어도 제품형 훅으로 바꾸거나 제품 키워드를 삽입하지 않는다. 요청하지 않은 새 훅 후보 제안·교체도 하지 않는다. 상세 계약은 `workflow/reference-editing.md`를 따른다.
 - 자기 계정 성과는 연결된 인앱 브라우저, 소셜 레퍼런스는 글로벌 `tikhub` CLI를 사용한다. 기존 자료와48시간 캐시를 우선하며 응답 payload를 확인한다.
 - 설계 요청은 생성·게시 실행이 아니다. 현재 사용자 지시와 회차 활성화 범위를 확인하고, 중지 요청을 최우선으로 따른다.
 - 제작은 영상 생성 모델와 음성 생성 모델 사용한다. 음성은 `assets/voices/dupy-female-v1/profile.json`의 denoise 참고 WAV·해시·전사를 고정 재사용한다. 전용 인물·배경·예산을 확인하고 모델을 임의 교체하지 않는다.

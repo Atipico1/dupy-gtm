@@ -1,27 +1,20 @@
-# Dupy GTM 검토 자료
+# GTM 자료 안내
 
-## 현재 설계
-- [7단계 루프 설계](dupy-gtm-loop.md)
-- [실행 기본 설정: 제작·게시 비활성](config.json)
-- [설치된 스킬](<local-path>)
-- [스킬 UI 메타데이터](<local-path>)
-- [독립 dry-run 검수](skill-dry-run-review.md)
-- [Harness² 원문 분석](../research/harness2-analysis.md)
-- [Dupy 제품 SoT](../research/dupy-product-sot.md)
+## 공개 문서
 
-## 레퍼런스
-- 레퍼런스 채널 원본·분석·엑셀은 비공개 로컬 폴더(research/, outputs/)에만 둔다. 채널 핸들은 workflow/config.local.json에 둔다.
+- [진행 기록](progress.md)
+- [7단계 루프](dupy-gtm-loop.md)
+- [실행 기본 설정](config.json)
+- [운영 스킬](../.agents/skills/dupy-gtm-loop/SKILL.md)
+- [레퍼런스·편집 계약](reference-editing.md)
+- [예약·게시 계약](publishing.md)
+- [실행 기록 계약](run-records.md)
+- [설계 당시 검수](skill-dry-run-review.md)
+- [Harness² 연구 메모](../research/harness2-analysis.md)
+- [제품 근거](../research/dupy-product-sot.md)
 
-## 로그인
-- [Instagram @dupy.app](https://www.instagram.com/dupy.app/)
-- [Threads @dupy.app](https://www.threads.com/@dupy.app)
-- [Threads 로그인 확인 화면](../creative/hooks/threads-login-confirmed.png)
+## 비공개 로컬 자료
 
-## 중지 지시 이전 테스트 — 새 루프의 제작물로 채택하지 않음
+원본 촬영물·선택한 인물·음성 프로필은 `assets/`, 제작 작업은 `creative/`, 내보내기는 `outputs/`, 실행별 결과와 영수증은 `runs/`에 둔다. 채널·상세 모델 설정은 `workflow/config.local.json`에서 관리한다. 이 자료는 Git에 포함되지 않으며 새 clone에는 없다.
 
-사용자의 중지 지시 이전 테스트1개는 이미 생성됐고 추가 생성은 하지 않았다. 새 루프는 영상 생성 모델/음성 생성 모델 쓰며 이 테스트를 자산으로 자동 채택하지 않는다.
-- [기존 테스트 영상](../creative/hooks/dupy-hook-v01.mp4)
-- [QA·검수 한계](../creative/hooks/qa.md)
-- [당시 제작 브리프](../creative/hooks/production-brief.md)
-- [요청 기록](../creative/hooks/generation-request.json)
-- [접수·완료 기록](../creative/hooks/generation-status.json)
+각 회차의 `run.json`, 단계 기록, 편집 타임라인과 검수 기록으로 원본부터 최종 선택본을 추적한다. 사람에게 결과물을 전달할 때에는 공개 저장소에 올리는 대신 해당 사용자가 열 수 있는 절대 파일 경로나 승인된 전달 위치를 사용한다. 이전 파일을 덮어쓰거나 실패한 결과를 완료본으로 표시하지 않는다.

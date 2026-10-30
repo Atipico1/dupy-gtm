@@ -62,3 +62,20 @@ research/*/call_log_excerpt.json
 # Reference-channel raw data and local overrides (private)
 research/_ref-private/
 workflow/config.local.json
+
+# Additional private runtime exports and provider assets
+*.local.json
+*.MP4
+*.MOV
+*.MP3
+*.WAV
+*.PNG
+*.JPG
+*.JPEG
+*.pem
+*.key
+*.p12
+*.safetensors
+*.ckpt
+*.pt
+*.onnx

@@ -16,6 +16,15 @@ Dupy의 Instagram·Threads 콘텐츠를 기획·제작·검수하고 예약·성
 
 별도 개선 에이전트는 회차의 실행 기록과 후속 성과를 분석한다. Harness²의 Propose–Probe–Compose를 참고해 기존 절차와 수정안을 비교하고, 근거가 있는 변경만 다음 회차에 적용한다. 현재 회차의 규칙은 고정한다.
 
+## 최근 성과 (2026-10-31 측정)
+
+- 릴스 1편이 조회 11,298, 좋아요 78, 댓글 50을 기록했다. 같은 주 다른 두 편(117, 114)의 약 100배이며 팔로워 10명인 신규 계정에서 나온 도달이다.
+- Cloudflare Web Analytics(봇 제외, 최근 24시간) 방문 78, 상위 유입은 직접 56, l.instagram.com 18, m.facebook.com 4.
+- 서비스 가입자 6명, 유료 구독 0. 전환은 아직 없다.
+- 개선 루프 1회차: UTM 추적 채택, 11,298회 편 구조는 재현 전까지 가설. [기록](research/harness2-round-2026-10-31.md), [교훈](workflow/lessons.jsonl)
+
+![Cloudflare Web Analytics 방문](docs/assets/cf-web-analytics-visits-2026-10-31.png)
+
 ## 주요 파일
 
 - [제품 SoT](research/dupy-product-sot.md): 현재 기능과 목표 컨셉의 구분

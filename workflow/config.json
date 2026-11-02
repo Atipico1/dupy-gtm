@@ -28,6 +28,7 @@
     "cache_hours": 48,
     "metrics_windows_hours": [
       24,
+      48,
       72,
       168
     ],
